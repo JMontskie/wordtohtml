@@ -1,3 +1,9 @@
+/* 
+PRIMARY COLOR -
+SECONDRY COLOR -
+ACCENT 1 -
+ACCENT 2 -
+*/
 
 *{
     margin: 0;
@@ -8,7 +14,7 @@
 }
 
 body{
-    background-color: #253E42;
+    background-color: #fdfdfd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +36,7 @@ body{
 /* LEFT SIDE CONTAINER */
 .container .leftside {
     position: relative;
-    background-color: #2A3E52;
+    background-color: #223C42;
     padding: 40px;        
 }
 
@@ -76,7 +82,7 @@ body{
 }
 
 .profileText h2{
-    color: #E3DFD1;
+    color: #fffcef;
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
@@ -85,7 +91,7 @@ body{
 }
 
 .profileText p {
-    color: #E3DFD1;
+    color: #fffcef;
     text-align: center;
     font-size: 0.8em;
     font-weight: 300;
@@ -103,7 +109,7 @@ body{
 }
 
 .title {
-    color: #E3DFD1;
+    color: #fffcef;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -123,14 +129,14 @@ body{
 
 .contact_info ul li span {
     font-weight: 400;
-    color: #E3DFD1;
+    color: #e6e3d7;
 }
 
 .contact_info ul li .icon{
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #03a9f4;
+    color: #bdc5c6;
 }
 
 /* Education */
@@ -141,7 +147,7 @@ body{
 
 .contact_info.educ h5 {
     font-weight: 500;
-    color: #03a9f4;
+    color: #bdc5c6;
 }
 
 .contact_info.educ h4:nth-child(2){
@@ -170,17 +176,55 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    background: red;
+    background: #A94E07;
 }
 
 
 /* RIGHT SIDE CONTAINER */
 .container .rightside {
     position: relative;
-    background-color: #A98936;
+    background-color: #FFFCEF;
     padding: 40px;
-    /* background-image: url("img/dio_stand.jpeg");
-    background-repeat:no-repeat;
-    background-size:cover; */
-    
+}
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+    color: #0F0703;
+    text-align: justify;
+}
+
+
+.title2 {
+    color:#223C42;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.about .box {
+    display: grid;
+    grid-template-columns: 150px 610px;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    /* color: #848c90; */
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    font-size: 16px;
 }
