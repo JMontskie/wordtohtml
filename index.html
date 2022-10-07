@@ -4,285 +4,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Resume</title>
-    <style>
-        /* this is a sing line css comment */
-        /*
-            this is a multi-line css comment.
-        */
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+    <title>Resume</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-        main{
-            padding: 8%;
-        }
 
-        header{
-            padding: 2% 10% 2%;
-        }
-
-        body{
-            margin: 5% 0% 5% 0%;
-            font-family: "Calibri", sans-serif;
-            color: gray;
-        }
-
-        h1 {
-            font-weight: 500;
-        }
-
-        h3{
-            font-weight: 500;
-
-        }
-
-        th {
-            font-weight: 400;
-            color: black;
-        }
-        
-        td{
-            padding: 5px 0 3px 2px;
-        }
-
-        li {
-            border: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        hr{
-            height: 3px;
-            border-left: 0;
-            border-right: 0;
-        }
-
-        .no_padding {
-            padding: none;
-        }
-
-        .header_td--empty{
-            /* background-color: orange; */
-            padding-left: 100px;
-        }
-    </style>
 </head>
 <body>
+    <header>
+    </header>  
     <main>
-        <!--Header Section-->
-        <header>
-            <h1>YOUR <span>NAME</span></h1>
-            <hr/>
-            
-            <table>
-                <tr>
-                    <td class="header_td--empty"></td>
-                    <td>
-                        Street Address, City, ST ZIP CODE| Telephone | Email
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </header>
-        <!--Section1-->
-        <section>
-            <h3>OBJECTIVE</h3>
-            <hr />
-            
-            <table>
-                <tr>
-                    <td class="header_td--empty"></td>
-                    <td>
-                            Check out the quick tips below to help you get started. To replace tip text </br> with your own, just click it and start typing.
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-               
-        </section>
-
-        <!--Section2-->
-        <section>
-            <h3>SKILLS AND ABILITIES</h3>
-            <hr />
-            
-            <table>
-                <tr>
-                    <td class="header_td--empty"></td>
-                    <td>On the Design tab of the ribbon, check out the Themes, Colors, and Fonts galleries <br/> to get a custom look with just a click.
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>  
-        </section>
-
-        <!--Section3-->
-        <section>
-            <h3>EXPERIENCE</h3>
-            <hr/>
-            
-            <table>
-                <tr>
-                    <th>Dates From-To</th>
-                    <td>Job Title, <em>Company Name</em></td>
-                </tr>
-                <tr>
-                    <td class="header_td--empty"></td>
-                    <td class="no_padding">
+        <section class="container">
+            <!--this area holds the whole document-->
+            <section class="leftside">
+                <!--this area holds the picture-->
+                <!-- <section class="profileText">
+                    <section class="contain1">
+                        <div>
+                            <figure class="imgBx">
+                                <a href="#"><img id="logo_pic" src="img/dioprof.jpg" alt="diobrando">
+                                </a>   
+                            </figure>
+                        </div>
+                        <div id="name">
+                            <h2>DIO BRANDO</h2>
+                            <p><em>THE WORLD STAND USER</em></p>
+                        </div>
+                    </section>
+                </section> -->
+                <div class="profileText">
+                    <div class="imgBx">
+                        <img src="img/dioprof.jpg" alt="Dio Brando" />
+                    </div>
+                    <h2>DIO BRANDO<br /><span>Web Developer</span></h2>
+                </div>
+                <!-- Contact Information -->
+                <section>
+                    <div class="contact_info">
+                        <h3 class="title">Contact Info</h3>
                         <ul>
                             <li>
-                                This is the place for a brief summary of your key responsibilities and most stellar accomplishment
+                                <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                                <span class="text">+XXX XXX XXXX</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-envelope-square" aria-hidden="true"></i></span>
+                                <span class="text">dBrando@jojo.com</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                <span class="text">www.mywebsite.com</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                                <span class="text">www.linkedin.com/me</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                <span class="text">Portsmouth, New Hampshire, United States</span>
                             </li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Dates From-To</th>
-                    <td>Job Title, <em>Company Name</em></td>
-                </tr>
-                <tr>
-                    <td class="header_td--empty"></td>
-                    <td>
+                    </div>                    
+                </section>
+                <!-- Educational Background -->
+                <section>
+                    <div class="contact_info educ">
+                        <h3 class="title">EDUCATION</h3>
                         <ul>
                             <li>
-                                This is the place for a brief summary of your key responsibilities and most stellar accomplishments.
+                                <h5>2010-2013</h5>
+                                <h4>Masters Degree in Computer Science</h4>
+                                <h4>University Name</h4>
+                            </li>
+                            <li>
+                                <h5>2007-2010</h5>
+                                <h4>Bachelors Degree in Computer Science</h4>
+                                <h4>University Name</h4>
+                            </li>
+                            <li>
+                                <h5>1997-2007</h5>
+                                <h4>Matriculation</h4>
+                                <h4>University Name</h4>
                             </li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </section>
+                    </div>                    
+                </section>
 
-        <!--Section4-->
-        <section>
-            <h3>EDUCATION</h3>
-            <hr />
-            
-            <table>
-                <tr>
-                    <th>Dates From-To</th>
-                    <td>Degree, Location, <em>School Name</em></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </section>
+                <section>
+                    <div class="contact_info lang">
+                        <h3 class="title">Languages</h3>
+                        <ul>
+                            <li>
+                                <span class="text">English</span>
+                                <div class="percent">
+                                    <div style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="text">Japanese</span>
+                                <div class="percent">
+                                    <div style="width: 100%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="text">Mandarin</span>
+                                <div class="percent">
+                                    <div style="width: 50%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="text">Tagalog</span>
+                                <div class="percent">
+                                    <div style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="text">Bisaya</span>
+                                <div class="percent">
+                                    <div style="width: 100%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                    
+                </section>
+            </section>
 
-        <!--Section5-->
-        <section>
-            <h3>COMMUNICATION</h3>
-            <hr />
             
-            <table>
-                <tr >
-                    <td class="header_td--empty"></td>
-                    <td>You delivered that big presentation to rave reviews. Don't be shy about it now! This is the place to <br/> 
-                        show how well you work and play with others.
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </section>
-
-        <!--Section6-->
-        <section>
-            <h3>LEADERSHIP</h3>
-            <hr />
-            
-            <table>
-                <tr >
-                    <td class="header_td--empty"></td>
-                    <td>Are you president of your fraternity, head of the condo board, or a team lead for your favorite charity?<br/> 
-                        You’re a natural leader—tell it like it is!
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </section>
+            <section class="rightside">
+                <!--section that contains the picture-->
+                <section>
+                    <div class="about">
+                        <h2 class="title2">Profile</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec dignissim lacus. Sed euismod ligula et nibh fringilla <br /> blandit. 
+                            Vivamus vestibulum, augue sit amet ullamcorper rutrum, urna metus hendrerit mi, non aliquam nisi ante nec <br /> mauris. 
+                            <br /><br />Morbi feugiat ipsum arcu, eu dapibus ex lacinia sit amet. Nullam tellus massa, hendrerit eu nisl ac, aliquet accumsan ex. <br />  
+                            Vestibulum at enim at orci laoreet commodo ac consequat magna. Cras sem quam, rhoncus quis turpis sed, vulputate<br />  malesuada metus. 
+                            Nullam risus felis, commodo sit amet cursus eget, commodo vel justo. Duis viverra nulla purus, eu<br /> viverra metus rutrum eu. 
+                            Aenean auctor nibh eget imperdiet hendrerit.
+                        </p>
+                    </div>
+                    <div class="about">
+                        <h2 class="title2">Experience</h2>
+                        <div class="box">
+                            <div class="year_company">
+                                <h5>2019 - Present</h5>
+                                <h5>Company Name</h5>
+                            </div>
+                            <div class="text">
+                                <h4>Senior UX Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue lobortis libero, congue feugiat diam venenatis non. Phasellus vel massa urna.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="year_company">
+                                <h5>2019 - 2019</h5>
+                                <h5>Company Name</h5>
+                            </div>
+                            <div class="text">
+                                <h4>UI/UX Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue lobortis libero, congue feugiat diam venenatis non. Phasellus vel massa urna.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="year_company">
+                                <h5>2014 - 2016</h5>
+                                <h5>Company Name</h5>
+                            </div>
+                            <div class="text">
+                                <h4>Junior UX Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue lobortis libero, congue feugiat diam venenatis non. Phasellus vel massa urna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about skills">
+                        <h2 class="title2">Professional Skills</h2>
+                        <div class="box">
+                            <h4>HTML</h4>
+                            <div class="percent">
+                                <div style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>CSS</h4>
+                            <div class="percent">
+                                <div style="width: 98%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Javascript</h4>
+                            <div class="percent">
+                                <div style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Photoshop</h4>
+                            <div class="percent">
+                                <div style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Illustrator</h4>
+                            <div class="percent">
+                                <div style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Adobe XD</h4>
+                            <div class="percent">
+                                <div style="width: 98%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about interest">
+                        <h2 class="title2">Interest</h2>
+                        <ul>
+                            <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+                            <li><i class="fa fa-microphone" aria-hidden="true"></i> Singing</li>
+                            <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
+                            <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
+                        </ul>
+                    </div>
+                </section> 
+            </section>
+        </section> 
     </main>
-
-    <footer>
-
-    </footer>
-    
+    <footer></footer>
+</body>
 </html>
